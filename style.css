@@ -1102,18 +1102,23 @@ body {
     opacity: 0.25;
 }
 
+.edu-logo img {
+    width: 90px;         /* Adjust width for desired size */
+    height: 90px;        /* Keep height same for square logos */
+    object-fit: contain; /* Ensures full logo shows, not cropped */
+    background: #fff;    /* Adds subtle background if needed */
+    border-radius: 16px; /* Soft corners, adjust as needed */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Optional drop shadow for depth */
+    padding: 8px;        /* Adds some space within the logo container */
+    display: block;
+    margin: 0 auto;      /* Center the logo horizontally */
+}
+
 .edu-logo {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(45deg, var(--color-primary), var(--color-primary-hover));
-    color: var(--color-white);
-    border-radius: var(--radius-base);
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-weight: var(--font-weight-bold);
-    margin-bottom: var(--space-16);
-    transition: transform var(--duration-fast) ease;
+    align-items: center;
+    height: 110px;      /* Set consistent vertical space for all logos */
 }
 
 .education-card:hover .edu-logo {
